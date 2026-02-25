@@ -1,3 +1,7 @@
 reports/latest_report.json
 reports/latest_report.txt
 backups/*.m3u
+
+reports/down_report.txt
+disabled/down_channels.m3u
+backups/lista.pre-disable.*.m3u
