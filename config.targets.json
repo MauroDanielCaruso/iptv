@@ -1,0 +1,37 @@
+{
+  "playlist_path": "lista.m3u",
+  "backup_dir": "backups",
+  "report_dir": "reports",
+  "targets": [
+    {
+      "name": "C5N",
+      "aliases": ["c5n"],
+      "extinf_template": "#EXTINF:-1 tvg-id=\"C5N.ar@SD\" group-title=\"News\",C5N",
+      "replacement_candidates": []
+    },
+    {
+      "name": "Crónica TV",
+      "aliases": ["cronica", "crónica", "cronica tv", "crónica tv"],
+      "extinf_template": "#EXTINF:-1 tvg-id=\"CronicaTV.ar@SD\" group-title=\"News\",Crónica TV",
+      "replacement_candidates": []
+    },
+    {
+      "name": "Telefe",
+      "aliases": ["telefe"],
+      "extinf_template": "#EXTINF:-1 tvg-id=\"Telefe.ar@SD\" group-title=\"General\",Telefe",
+      "replacement_candidates": []
+    },
+    {
+      "name": "El Trece",
+      "aliases": ["el trece", "eltrece"],
+      "extinf_template": "#EXTINF:-1 tvg-id=\"ElTrece.ar@SD\" group-title=\"General\",El Trece",
+      "replacement_candidates": []
+    },
+    {
+      "name": "TN",
+      "aliases": ["tn", "todo noticias"],
+      "extinf_template": "#EXTINF:-1 tvg-id=\"TN.ar@SD\" group-title=\"News\",TN",
+      "replacement_candidates": []
+    }
+  ]
+}
