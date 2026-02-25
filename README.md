@@ -47,26 +47,31 @@ python3 scripts/iptv_guardian.py --config config.targets.json --apply
 python3 scripts/iptv_sync_from_iptvorg.py --apply
 ```
 
-2) Desactivar temporalmente canales caídos (DOWN):
+2) Reordenar/pinear canales populares al principio (sin borrar nada):
 
 ```bash
-python3 scripts/iptv_disable_down.py --apply
+python3 scripts/iptv_pin_order.py --apply
+```
+
+3) Revisar estado UP/DOWN sin modificar la lista (solo reporte):
+
+```bash
+python3 scripts/iptv_disable_down.py
 ```
 
 Esto deja:
-- `lista.m3u` = solo canales UP
-- `disabled/down_channels.m3u` = canales DOWN (para revisar y reactivar)
-- `reports/down_report.txt` = diagnóstico de UP/DOWN
+- `lista.m3u` = mantiene TODOS los canales (incluidos caídos)
+- `reports/down_report.txt` = diagnóstico de UP/DOWN para que cambies links manualmente
 
 ## Job diario (OpenClaw)
 
 ```bash
 openclaw cron add \
-  --name "iptv:daily-sync-and-disable-down" \
+  --name "iptv:daily-sync-pin-and-report" \
   --cron "15 9 * * *" \
   --tz "America/Buenos_Aires" \
   --session main \
-  --system-event "En /root/.openclaw/workspace/projects/iptv ejecutar: python3 scripts/iptv_sync_from_iptvorg.py --apply && python3 scripts/iptv_disable_down.py --apply. Si hubo cambios, avisar resumen breve a Mauro."
+  --system-event "En /root/.openclaw/workspace/projects/iptv ejecutar: python3 scripts/iptv_sync_from_iptvorg.py --apply && python3 scripts/iptv_pin_order.py --apply && python3 scripts/iptv_disable_down.py. Avisar resumen breve a Mauro con cantidad de DOWN."
 ```
 
-> Nota: para reactivar un canal DOWN, revisar `reports/down_report.txt`, corregir URL y volver a correr el filtro.
+> Nota: los canales DOWN no se borran de `lista.m3u`; solo se reportan en `reports/down_report.txt` para corregir URL cuando quieras.
