@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="C5N.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/C5N_logo.svg/512px-C5N_logo.svg.png" group-title="News",C5N
+#EXTINF:-1 tvg-id="C5N.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/22/Logo-c5n.svg" group-title="News",C5N
 https://api.m3use.projectmoose.xyz/m3u/maurocaruso/TV%20Argentina/699f09a17a9bfcde70bf10d0.m3u8?uid=maurocaruso&pkey=93xpNkac
 #EXTINF:-1 tvg-id="AmericaTV.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png/512px-Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png" group-title="General" user-agent="Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",America TV (720p)
 https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8
