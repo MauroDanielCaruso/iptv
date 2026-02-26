@@ -1,29 +1,29 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="C5N.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/22/Logo-c5n.svg" group-title="News",C5N
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1772161515/ei/i7WgaZulFKmj-LAPjs2NoAc/ip/2803:9800:a017:8012:be24:11ff:fe01:d908/id/SF06Qy1Ct6Y.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr5---sn-jup-x1xk.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AVNa5-xIUW3rd5td6jK7wAtktUtg4VhgR09WNEpEtkKe8IH3UtNAMzrE20a5wfjVz34z4kvLaOeaMxIs/spc/6dlaFHOVQWWGJG4iYBfx/vprv/1/playlist_type/DVR/hcs/sd/initcwndbps/1920000/met/1772139915,/mh/yp/mm/44/mn/sn-jup-x1xk/ms/lva/mv/m/mvi/5/pl/48/rmhost/rr4---sn-jup-x1xk.googlevideo.com/rms/lva,lva/smhost/rr3---sn-ja5gv5g-x1xd.googlevideo.com/dover/11/pacing/0/keepalive/yes/fexp/51552689,51565115,51565682,51580968,51791334/mt/1772139400/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,playlist_type/sig/AJEij0EwRAIgM2lj44fV1xSHW-sx-7wSEewZIZDjuTuuvpy2tCxm3loCIGyDsGK9BAthDCBl1PwVDf-QnqW56xSV_xTSDeF9ITZF/lsparams/hls_chunk_host,hcs,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rmhost,rms,smhost/lsig/APaTxxMwRQIhAOD-4EwKOXb1oFKhjMNTr0-o9gdrylSBI3BJNbTRuC3TAiBFtyPrNFHg2hO_TFQWbISNHzGV0oGQxLzubV50mTzOIw%3D%3D/playlist/index.m3u8
-#EXTINF:-1 tvg-id="AmericaTV.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png/512px-Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png" group-title="General" user-agent="Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",America TV (720p)
+#EXTINF:-1 tvg-id="AmericaTV.ar@SD" tvg-logo="https://commons.wikimedia.org/wiki/Special%3AFilePath/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png" group-title="General" user-agent="Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",America TV (720p)
 https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8
-#EXTINF:-1 tvg-id="AmericaTV.ar@SD",America TV (720p)
+#EXTINF:-1 tvg-id="AmericaTV.ar@SD" tvg-logo="https://commons.wikimedia.org/wiki/Special%3AFilePath/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",America TV (720p)
 https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8
-#EXTINF:-1 tvg-id="Telefe.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Telefe_%28nuevo_logo%29.png/512px-Telefe_%28nuevo_logo%29.png" group-title="General",Telefe
+#EXTINF:-1 tvg-id="Telefe.ar@SD" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Telefe_(nuevo_logo).png" group-title="General",Telefe
 https://telefeappmitelefe1.akamaized.net/hls/live/2037985/appmitelefe/TOK/hdntl=exp=1772150793~acl=%2f*~data=hdntl~hmac=20bbd97e8a3b7719ae7c179eda22ba8e7b48f16bbc5e7035e9e94bc27fe1d803/master-mtlf.m3u8
-#EXTINF:-1 tvg-id="TelefeRosario.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Telefe_Rosario_%282018%29.png/512px-Telefe_Rosario_%282018%29.png" group-title="",Telefe Rosario
+#EXTINF:-1 tvg-id="TelefeRosario.ar@SD" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Telefe_Rosario_(2018).png" group-title="",Telefe Rosario
 https://cdn-cirion01.sensa.com.ar/output/ARR2/TelefeRosarioH/playlist.m3u8
-#EXTINF:-1 tvg-id="TelefeRosario.ar@SD",Telefe Rosario [Geo-blocked]
+#EXTINF:-1 tvg-id="TelefeRosario.ar@SD" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Telefe_Rosario_(2018).png",Telefe Rosario [Geo-blocked]
 https://cdn-cirion01.sensa.com.ar/output/ARR2/TelefeRosarioH/playlist.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar@SD" tvg-logo="https://i.imgur.com/IhJ0BjF.png" group-title="General",NET TV (720p)
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CiudadMagazine.ar@SD" tvg-logo="https://i.imgur.com/V1xZV72.png" group-title="General",Ciudad Magazine (1080p)
 https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/index.m3u8
-#EXTINF:-1 tvg-id="CiudadMagazine.ar@SD",Ciudad Magazine (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="CiudadMagazine.ar@SD" tvg-logo="https://i.imgur.com/V1xZV72.png",Ciudad Magazine (1080p) [Geo-blocked]
 https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/index.m3u8
-#EXTINF:-1 tvg-id="TyCSports.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/512px-TyC_Sports_logo.svg.png" group-title="Sports",TyC Sports (1080p)
+#EXTINF:-1 tvg-id="TyCSports.ar@SD" tvg-logo="https://statics-files.tycsports.com/frontend/tycsports/img/logo_112x112.png" group-title="Sports",TyC Sports (1080p)
 https://live-04-11-tyc24.vodgc.net/tyc24/index_tyc24_1080.m3u8
-#EXTINF:-1 tvg-id="TyCSports.ar@SD",TyC Sports (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TyCSports.ar@SD" tvg-logo="https://statics-files.tycsports.com/frontend/tycsports/img/logo_112x112.png",TyC Sports (1080p) [Geo-blocked]
 https://live-04-11-tyc24.vodgc.net/tyc24/index_tyc24_1080.m3u8
 #EXTINF:-1 tvg-id="RTN.ar@SD" tvg-logo="https://i.imgur.com/8xqYg4C.png" group-title="",RTN (Neuquén) (720p)
 https://media.neuquen.gov.ar/rtn/television/media.m3u8
-#EXTINF:-1 tvg-id="RTN.ar@SD",RTN (Neuquén) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTN.ar@SD" tvg-logo="https://i.imgur.com/8xqYg4C.png",RTN (Neuquén) (720p) [Not 24/7]
 https://media.neuquen.gov.ar/rtn/television/media.m3u8
 #EXTINF:-1 tvg-id="Canal13Jujuy.ar@SD" tvg-logo="https://i.imgur.com/lmKLiJ3.jpg" group-title="Religious",Canal 13 Jujuy TV (720p)
 https://genexservicios.com:19360/canal13jujuy/canal13jujuy.m3u8
@@ -181,31 +181,31 @@ https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8
 https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaTerror.ar@SD" tvg-logo="https://i.imgur.com/FcaTUym.png" group-title="Movies" referrer="https://xtrematv.com/?p=1456",Xtrema Terror
 https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8
-#EXTINF:-1 tvg-id="5tv.ar@SD",5TV Corrientes (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="5tv.ar@SD" tvg-logo="https://i.imgur.com/mSn7ACs.png",5TV Corrientes (480p) [Not 24/7]
 http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
-#EXTINF:-1 tvg-id="AlternaTV.ar@SD",Alterna TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlternaTV.ar@SD" tvg-logo="https://tv.alterna.ar/alternatv.png",Alterna TV (720p) [Not 24/7]
 https://tv.alterna.ar/stream/hls/live.m3u8
-#EXTINF:-1 tvg-id="CableImagenArmstrong.ar@SD",Cable Imagen Armstrong (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="CableImagenArmstrong.ar@SD" tvg-logo="https://i.imgur.com/U9NuJQC.png",Cable Imagen Armstrong (540p) [Not 24/7]
 https://stream.arcast.com.ar/casse/casse/playlist.m3u8
-#EXTINF:-1 tvg-id="Cadena103TV.ar@SD",Cadena 103 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Cadena103TV.ar@SD" tvg-logo="https://i.imgur.com/vBsry35.png",Cadena 103 (720p) [Not 24/7]
 http://arcast.net:1935/cadena103/cadena103/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal5DelPueblo.ar@SD",Canal 5 Del Pueblo [Not 24/7]
+#EXTINF:-1 tvg-id="Canal5DelPueblo.ar@SD" tvg-logo="https://i.ibb.co/XzcYYMc/Canal-5-alcorta-ver.jpg",Canal 5 Del Pueblo [Not 24/7]
 https://stmv4.voxtvhd.com.br/canal5pueblo/canal5pueblo/playlist.m3u8
-#EXTINF:-1 tvg-id="ChacoTV.ar@SD",Chaco TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ChacoTV.ar@SD" tvg-logo="https://i.imgur.com/b6RerDw.png",Chaco TV (720p) [Not 24/7]
 https://wowzasrv.chaco.gov.ar/Streamtv/chacotv/playlist.m3u8
 #EXTINF:-1 tvg-id="",Milennio TV (720p)
 https://videostream.shockmedia.com.ar:19360/milenniotv/milenniotv.m3u8
-#EXTINF:-1 tvg-id="RadioTVNeuquen.ar@SD",Radio TV Neuquén (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioTVNeuquen.ar@SD" tvg-logo="https://i.imgur.com/HXBLozl.png",Radio TV Neuquén (720p) [Not 24/7]
 https://media.neuquen.gov.ar/rtn/television/playlist.m3u8
-#EXTINF:-1 tvg-id="SanPedroTV.ar@SD",San Pedro TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SanPedroTV.ar@SD" tvg-logo="https://i.imgur.com/UkpXogr.png",San Pedro TV (1080p) [Not 24/7]
 https://iptv.ixfo.com.ar:30443/live/sanpedrotv/playlist.m3u8
-#EXTINF:-1 tvg-id="Telenord.ar@SD",Telenord (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telenord.ar@SD" tvg-logo="https://i.imgur.com/yqXORkt.png",Telenord (720p) [Not 24/7]
 https://617c5175c970b.streamlock.net:4444/previsoratv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Telenord.ar@SD",Telenord Corrientes (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telenord.ar@SD" tvg-logo="https://i.imgur.com/yqXORkt.png",Telenord Corrientes (1080p) [Not 24/7]
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TVManaArgentina.ar@SD",TV Maná Argentina (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVManaArgentina.ar@SD" tvg-logo="https://i.imgur.com/jars0mP.png",TV Maná Argentina (576p) [Not 24/7]
 https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Uniteve.ar@SD",Uniteve (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Uniteve.ar@SD" tvg-logo="https://pbs.twimg.com/profile_images/720276300888453120/a_SDOmBc_400x400.jpg",Uniteve (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/uniteve/uniteve.m3u8
-#EXTINF:-1 tvg-id="VTV.ar@SD",VerTV (VTV) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="VTV.ar@SD" tvg-logo="https://i.imgur.com/TLaausJ.png",VerTV (VTV) (720p) [Not 24/7]
 https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
