@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import List, Tuple, Optional
 
 DEFAULT_VIDEO_URL = "https://www.youtube.com/watch?v=SF06Qy1Ct6Y"
+DEFAULT_STREAMS_URL = "https://www.youtube.com/@c5n/streams"
 
 
 def parse_entries(lines: List[str]) -> List[Tuple[int, int, str]]:
@@ -24,10 +25,29 @@ def parse_entries(lines: List[str]) -> List[Tuple[int, int, str]]:
     return entries
 
 
-def get_live_url(video_url: str) -> str:
-    cmd = ["yt-dlp", "-f", "b", "-g", video_url]
+def run(cmd: List[str]) -> List[str]:
     out = subprocess.check_output(cmd, text=True, stderr=subprocess.STDOUT).strip().splitlines()
-    urls = [line.strip() for line in out if line.strip().startswith("http")]
+    return [line.strip() for line in out if line.strip()]
+
+
+def resolve_video_url(video_url: Optional[str], streams_url: str) -> str:
+    if video_url:
+        return video_url
+
+    lines = run(["yt-dlp", "--flat-playlist", "--print", "url", streams_url])
+    watch_lines = [x for x in lines if "watch?v=" in x]
+    if not watch_lines:
+        raise RuntimeError("No pude resolver video desde /streams")
+
+    first = watch_lines[0]
+    if first.startswith("http"):
+        return first
+    return f"https://www.youtube.com/watch?v={first}"
+
+
+def get_live_url(video_url: str) -> str:
+    lines = run(["yt-dlp", "-f", "b", "-g", video_url])
+    urls = [line for line in lines if line.startswith("http")]
     if not urls:
         raise RuntimeError("yt-dlp no devolvió URL de stream")
     return urls[-1]
@@ -43,7 +63,8 @@ def find_c5n_url_idx(lines: List[str]) -> Optional[int]:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Actualiza la URL de C5N con una URL fresca obtenida desde YouTube (yt-dlp).")
     ap.add_argument("--playlist", default="lista.m3u")
-    ap.add_argument("--video-url", default=DEFAULT_VIDEO_URL)
+    ap.add_argument("--video-url", default=None, help="URL directa de video. Si no se pasa, toma la última de /streams")
+    ap.add_argument("--streams-url", default=DEFAULT_STREAMS_URL, help="Canal /streams para resolver video automáticamente")
     ap.add_argument("--apply", action="store_true", help="Escribe cambios en la playlist")
     args = ap.parse_args()
 
@@ -60,11 +81,13 @@ def main() -> int:
 
     old_url = lines[idx].strip()
     try:
-        new_url = get_live_url(args.video_url)
+        resolved_video = resolve_video_url(args.video_url, args.streams_url)
+        new_url = get_live_url(resolved_video)
     except Exception as e:
         print(f"Error obteniendo URL con yt-dlp: {e}", file=sys.stderr)
         return 4
 
+    print(f"video: {resolved_video}")
     print(f"old: {old_url}")
     print(f"new: {new_url}")
 
